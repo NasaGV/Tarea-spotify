@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("fondo-musical-abstracto-vectorial-ilustracion-vectorial_206725-624.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    max-width: 90%;
+    width: 400px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+#now-playing {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.controls button {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin: 0 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.controls button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.playing-indicator {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 1.2em;
+    animation: pulse 1s infinite;
+}
